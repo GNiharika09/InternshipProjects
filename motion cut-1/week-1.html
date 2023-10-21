@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!---- <link rel="stylesheet" href="./static/css/navbar.css">-->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script>
+        // JavaScript code here
+
+        // Example: Display an alert when the page is loaded
+        window.onload = function() {
+            alert("Welcome to My portfolio website...<3!");
+        }
+
+        // Example: Toggle a mobile menu
+        function toggleMobileMenu() {
+            var menu = document.getElementById("mobile-menu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+h1 {text-align: center;color: #D3AC2B;}
+hr{
+    border-top: 1px solid #A0D3F9;
+}
+h3,h4,h5,h6,p,div{
+    color: #eeecd3;
+}
+      p {text-align: center;}
+      div {text-align: center;}
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        .w3-sidebar {width: 182px;background: #872642;}
+        #main {margin-left: 182px}
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        
+        </style>
+        <body class="w3-black" >
+        <!-- Icon Bar (Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+          <!-- Avatar image in top left corner -->
+          <img src="C:\Users\harsh\Downloads\yellow.jpeg" style="width:100%">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <img src="https://media.istockphoto.com/id/1359203036/vector/gold-house-with-shield-icon-isolated-on-black-background-insurance-concept-security-safety.jpg?s=612x612&w=0&k=20&c=I6f1rVgs75nyUazbjFHtNZkRF5aBBQVnNIt3b1i90zw=" width="50"/>
+            <p style="font-size: large;">Home</p>
+            <img>
+          </a>
+
+          <a href="#Biography" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <img src="https://cdn.create.vista.com/api/media/medium/471022556/stock-vector-biography-gold-plated-metalic-icon?token=" width="50"/>
+            <p style="font-size: large;">Biography</p>
+          </a>
+          <a href="#Qualifications" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <img src="https://img.myloview.com/stickers/gold-medal-icon-isolated-on-black-background-winner-achievement-sign-award-medal-vector-700-239854805.jpg" width="50"/>
+            <p style="font-size: large;">Qualifications</p>
+          </a>
+          <a href="#Skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <img src="https://thumbs.dreamstime.com/b/gold-clipboard-checklist-icon-isolated-black-background-control-list-symbol-survey-poll-questionnaire-feedback-form-230230041.jpg" width="50"/>
+            <p style="font-size: large;">Skills</p>
+          </a>
+          <a href="#Projects&Activities" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <img src="https://i.pinimg.com/736x/d1/bd/3b/d1bd3b6e85ccfdca413da69ca64e1e20.jpg" width="50" style="font-size: large;">Projects&Activities</p>
+          </a>
+         
+        </nav>
+        
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+          <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+            <a href="#Biography" class="w3-bar-item w3-button" style="width:25% !important">Biography</a>
+            <a href="#Qualifications" class="w3-bar-item w3-button" style="width:25% !important">Qualifications</a>
+            <a href="#Skills" class="w3-bar-item w3-button" style="width:25% !important">Responsibilities</a>
+            <a href="#Projects&Activities" class="w3-bar-item w3-button" style="width:25% !important">Projects&Activities</a>
+            
+
+        </div>
+        </div>
+        <!-- Page Content -->
+<div class="w3-padding-large" id="main" style="background-color: #4C4556;;">
+    
+</head>
+
+<div id="Menu" onclick="menuClicked()"> </div>
+<div id="Navbar">
+    <div id="navDP">
+    </div> 
+    <div id="dynamicContent"></div>
+<div id="MainContainer">
+
+    <section id="Home" class="container">
+        
+        <div class="content">
+            <div class="img_dp"> <img src=>
+                <img id="slideshow" src="C:\Users\harsh\Downloads\yellow.jpeg" alt="DP" class="center"">
+                 </div>
+            
+            <div>
+                <div class="content_info">
+                    <h2 class="name"><h1 class="w3-jumbo"><span class="w3-hide-small"></span>Gaddam Niharika</h1> <span style="white-space:nowrap"></span></h2>
+                    <h3 class="about"><span class="about_title">Current Position:</span> <br><br> &emsp; An undergraduate student 
+                        in Computer Science & Engineering branch of Chaitanya Bharathi Institute of science and Technology ,Kokapet, Gandipet – 500075, Telangana, India.</h3>
+                </div>
+                <div id="Contacts">
+                    <div class="emails_container">  
+                        <h6>GmailId:</h6>     
+                            <a href="mailto:ramyat_cseaiml@cbit.ac.in" class="email_button">niharikaniharika157@gmail.com </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Biography" class="container">
+        <br>
+        <hr>
+        <h1 class="main_heading">Biography</h1><hr><br>
+        <p>
+            <span class="my_name"></span> Heya Everyone!! This is Niharika and I'm the embodiment of curiosity and innovation in the tech world. My journey into the digital realm began with a fascination for all things tech, and it has since evolved into a deep passion for coding, problem-solving, and embracing the dynamic landscape of technology.
+
+            I've spent countless hours exploring the intricate dance of algorithms, mastering programming languages, and unlocking the secrets of digital systems. The world of technology is my playground, and I thrive on the challenges it presents. Whether it's debugging complex code or crafting elegant software solutions, I'm always up for the adventure.
+           
+            <br><br><hr><br>
+            <h4>LinkedIn <a target="_blank" href="https://www.linkedin.com/in/gaddam-niharika-2911b6271/?originalSubdomain=in"><img
+                            src="https://thumbs.dreamstime.com/b/external-link-icon-open-page-icon-external-link-icon-open-page-icon-vector-illustration-isolated-white-background-145671236.jpg" alt="link" width="22"/></a> </h4>
+                <br><hr><br>
+                <h4>GmailId <a target="_blank"
+                        href="mailto:niharikaniharika157@gmail.com"><img
+                            src="https://thumbs.dreamstime.com/b/external-link-icon-open-page-icon-external-link-icon-open-page-icon-vector-illustration-isolated-white-background-145671236.jpg" alt="link" width="22"/></a> </h4>
+              <br> <hr><br>
+        </section>
+        <section id="Qualifications" class="container">
+           <hr> <h1 class="main_heading"><br>Educational Qualifications</h1> <br><hr>
+           <br>
+                <h4>1. Schooling at DilsukhNagar Public School, DilsukhNagar,Hyderabad.<br> <br>SSC Percentage - 98% </h4><br>
+                <h4>2. Inter at Narayana Junior College.<br> Percentage - 97% </h4><br>
+                <h4>3. Undergraduate at Chaitanya Bharathi Institute Of Technology,Specialization in Computer Science and Engineering<br><br> CGPA - 89.2%</h4><br>
+         <hr>
+        </section>
+        <section id="Skills" class="container">
+            <h1 class="main_heading">Skills</h1><hr><br>
+            <h4>C</h4>
+            <h4>JAVA</h4>
+            <h4>Internet & Web Technologies</h4>
+            <h4>Data Structures</h4>
+            <h4>Operating Systems</h4>
+            <h4>Formal Languages</h4>
+            <h4>Automata Theory</h4>
+            <h4>Mathematical foundations of
+                computer science</h4>
+            <h4> Python</h4>
+            <h4>DataBase Management System</h4><br>
+                <hr>
+            
+        </section>
+        <section id="Projects&Activities" class="container">
+         <br>   <h1 class="main_heading">Academic Projects and Extra Cirricular Activities..</h1><br><hr><br>
+             <ul>
+                  <li><h5>BASIC OPRATIONS OF A ELEVATOR - Created using C programming Language using
+                    priority queue.</h5></li>  <br>
+                       
+                    <li><h5>FACULTY WEBSITE - Created a faculty website of one of the faculty in
+                        our college using HTML & CSS.</h5></li><br>
+                        <li>BUS TRANSPORTATION MANAGEMENT SYSTEM - Created using python programming language.
+                        </li><br>
+                    <li><h5>Part of the Ramanujan Math
+                        Club theonly math club of CBIT
+                        and conducted various exciting
+                        events.
+                    </h5></li><br>
+                        <li><h5>Part of the HackitOn club of
+                        CBIT and conducted various
+                        hackatons and events.</h5></li><br><hr>
+                    
+                    </ul> 
+                </section>
+           
+        
+    
